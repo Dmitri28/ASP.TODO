@@ -1,0 +1,12 @@
+﻿@model TodoViewModel
+@{
+    ViewData["Title"] = "Todo";
+}
+<h1>Todos :</h1>
+@foreach(var todo in Model._todos)
+{
+    <h1>@todo.Title</h1>
+    <h1>@todo.Content</h1>
+    <h1>@(todo.IsCompleted ? "Completed":"In  progress")</h1>
+
+}
